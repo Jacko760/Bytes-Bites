@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/copyIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/baseline_content_copy_24" /> <!-- Replace with your copy icon -->
+
+        <ImageView
+            android:id="@+id/audioIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/baseline_spatial_audio_off_24"
+            android:contentDescription="TODO" /> <!-- Replace with your audio icon -->
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/dialoglabelcontView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:gravity="top|start"
+        />
+    <TextView
+        android:id="@+id/dialogTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:gravity="top|start"
+        />
+</LinearLayout>

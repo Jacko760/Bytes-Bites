@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Image View for displaying the uploaded image -->
+    <ImageView
+        android:id="@+id/ivSetImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/teal_700"
+        android:scaleType="centerCrop"/>
+
+    <!-- Button for uploading or taking a picture -->
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSetImage"
+        android:text="Upload or Take Picture"/>
+
+    <!-- Spinner (Dropdown) for selecting language -->
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnUpload"
+        android:entries="@array/recipe_count_options"/>
+
+    <!-- Spinner for selecting recipe type -->
+    <Spinner
+        android:id="@+id/spinnerRecipeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@id/spinnerLanguage"
+        android:entries="@array/target_language_options"/>
+
+    <!-- Button for generating recipes -->
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRecipeType"
+        android:text="Generate Recipe"/>
+
+    <!-- Text View for displaying the generated recipe or messages -->
+    <TextView
+        android:id="@+id/tvRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGenerate"
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
