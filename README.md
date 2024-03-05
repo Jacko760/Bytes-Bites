@@ -27,3 +27,6 @@ To get a local copy up and running, follow these simple steps.
 1. Clone the repo
    ```sh
    git clone https://github.com/Jacko760/Bytes-Bites.git
+
+
+[![Sample App Screen Recording](https://i.vimeocdn.com/video/1234567890_640x360.jpg)](https://vimeo.com/919641779)
